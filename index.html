@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomora | Flowers for Every Moment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="announcement">A little beauty for your everyday moments</div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">bloomora<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-button" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">☾</button>
+      <button class="icon-button cart-open" id="cartOpen" aria-label="Open shopping cart">
+        ♡ <span id="cartCount" class="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">FLOWERS FOR EVERY MOMENT</p>
+        <h1>Let flowers<br>say it <em>beautifully.</em></h1>
+        <p class="hero-description">
+          Thoughtfully chosen blooms to make ordinary days feel a little more special.
+        </p>
+        <a class="primary-button" href="#shop">Explore Flowers <span>↗</span></a>
+        <div class="hero-note"><span class="note-dot"></span> Find your favourite blooms</div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1200&q=90"
+          alt="A beautiful bunch of fresh pink tulips"
+        >
+        <div class="image-caption">
+          <span>01 / OUR COLLECTION</span>
+          <span>Seasonal blooms</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY STRIP -->
+    <section class="category-strip" aria-label="Flower categories">
+      <a href="#shop" data-category-link="All">All flowers <span>↗</span></a>
+      <a href="#shop" data-category-link="Roses">Roses <span>↗</span></a>
+      <a href="#shop" data-category-link="Tulips">Tulips <span>↗</span></a>
+      <a href="#shop" data-category-link="Lilies">Lilies <span>↗</span></a>
+      <a href="#shop" data-category-link="Bouquets">Bouquets <span>↗</span></a>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop-section section-padding" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE FLOWER SHOP</p>
+          <h2>Find your <em>perfect bloom.</em></h2>
+          <p class="section-subtitle">A flower for every feeling, person and occasion.</p>
+        </div>
+        <span class="product-total" id="productTotal">18 flowers</span>
+      </div>
+
+      <div class="shop-toolbar">
+        <div class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input type="search" id="searchInput" placeholder="Search flowers..." aria-label="Search flowers">
+        </div>
+
+        <div class="toolbar-controls">
+          <select id="categoryFilter" aria-label="Filter by category">
+            <option value="All">All categories</option>
+            <option value="Roses">Roses</option>
+            <option value="Tulips">Tulips</option>
+            <option value="Lilies">Lilies</option>
+            <option value="Sunflowers">Sunflowers</option>
+            <option value="Bouquets">Bouquets</option>
+            <option value="Other">Other flowers</option>
+          </select>
+
+          <select id="sortSelect" aria-label="Sort flowers">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+            <option value="az">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-message" id="emptyMessage" hidden>No flowers found. Try another search.</p>
+    </section>
+
+    <!-- ABOUT: DIFFERENT FLOWER IMAGE -->
+    <section class="about-section section-padding" id="about">
+      <div class="about-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1100&q=90"
+          alt="A colourful arrangement of fresh flowers"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="about-content">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>Small gestures.<br><em>Beautiful feelings.</em></h2>
+        <p>
+          At Bloomora, we believe flowers can make a moment unforgettable.
+          From a simple thank-you to a special celebration, our collection
+          helps you share a little happiness in your own way.
+        </p>
+        <p>
+          Discover blooms in different colours, shapes and styles, and choose
+          the flowers that feel right for your moment.
+        </p>
+        <a class="text-link" href="#shop">Discover our collection <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="contact-intro">
+        <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+        <h2>Contact <em>Us.</em></h2>
+        <p>Have a question or need help choosing flowers? Send us a message.</p>
+        <div class="contact-detail">
+          <span class="contact-icon">✉</span>
+          <div>
+            <strong>Send us a message</strong>
+            <p>Fill out the form and we'll be happy to help.</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-icon">♡</span>
+          <div>
+            <strong>Made for your moments</strong>
+            <p>Birthdays, celebrations or just because.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+
+        <label>
+          Phone number <span class="optional">(optional)</span>
+          <input type="tel" name="phone" placeholder="Enter your phone number">
+        </label>
+
+        <label>
+          Your message
+          <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+        </label>
+
+        <button type="submit" class="primary-button form-submit">Send Message <span>↗</span></button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="logo" href="#home">bloomora<span>.</span></a>
+    <p>Flowers for the moments that matter.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">© <span id="currentYear"></span> Bloomora. All rights reserved.</p>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h2>Your cart <span id="cartTitleCount">(0)</span></h2>
+      </div>
+      <button class="icon-button" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cartTotal">৳0</strong>
+      </div>
+      <button class="primary-button checkout-button" id="checkoutButton">Continue to Checkout <span>↗</span></button>
+      <p class="cart-small-note">Demo store: checkout does not process real payments.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
